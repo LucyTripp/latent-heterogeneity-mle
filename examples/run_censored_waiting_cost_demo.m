@@ -18,5 +18,4 @@ ylabel("Parameter value");
 legend("True", "Estimated", "Location", "best");
 title("Censored waiting-cost parameter recovery");
 grid on;
-format_figure_for_export(gcf);
 exportgraphics(gcf, "../figures/censored_parameter_recovery.png", "Resolution", 180);

@@ -19,10 +19,8 @@ bic = cellfun(@(fit) fit.bic, fits);
 selected_fit = fits{selected_k};
 
 fprintf("\nSelected %d classes by BIC.\n", selected_k);
-results_table = table(selected_fit.weights(:), ...
-    selected_fit.annual_rates(:), ...
-    VariableNames={'EstimatedWeight', 'EstimatedAnnualRate'});
-disp(results_table);
+disp(table(selected_fit.weights', selected_fit.annual_rates', ...
+    "VariableNames", ["EstimatedWeight", "EstimatedAnnualRate"]));
 
 figure("Color", "white");
 plot(candidate_classes, bic, "-o", "LineWidth", 1.8, "MarkerSize", 7);
@@ -47,6 +45,5 @@ if selected_k == numel(true_weights)
     ylabel("Annual rate");
     legend("True", "Estimated", "Location", "best");
     title("Rate recovery");
-    format_figure_for_export(gcf);
     exportgraphics(gcf, "../figures/finite_mixture_recovery.png", "Resolution", 180);
 end

@@ -26,5 +26,4 @@ xlabel("Log-rate standard deviation, \sigma");
 ylabel("NLL relative to minimum");
 title("Continuous-mixture likelihood profile");
 grid on;
-format_figure_for_export(gcf);
 exportgraphics(gcf, "../figures/continuous_mixture_profile.png", "Resolution", 180);
