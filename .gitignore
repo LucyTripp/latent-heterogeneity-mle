@@ -1,0 +1,18 @@
+# MATLAB autosaves and generated files
+*.asv
+*.m~
+*.autosave
+slprj/
+codegen/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Generated experiment output
+output/
+*.mat
+
+# Keep curated figures tracked
+!figures/*.png
