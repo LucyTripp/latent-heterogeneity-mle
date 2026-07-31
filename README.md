@@ -149,3 +149,7 @@ Exact numerical estimates vary with the random seed, sample size, quadrature ord
 - Covariate-dependent class membership or rates
 - Bayesian versions of the same models
 - Performance benchmarks for vectorized and parallel multi-start estimation
+
+## AI assistance
+
+This project originated as a learning exercise. Generative AI was used substantially to assist with code generation, refactoring, debugging, test design, figure formatting, and documentation. I reviewed the mathematical formulation, ran and evaluated the simulations and tests, investigated errors, and verified the final outputs. I take responsibility for the accuracy and limitations of the published work.
